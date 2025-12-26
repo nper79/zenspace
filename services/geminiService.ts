@@ -83,12 +83,7 @@ export const generateAerialMap = async (images: string[], prompt: string): Promi
 
   // Using gemini-3-pro-image-preview (Nano Banana Pro) for ultimate architectural quality.
   const fullPrompt = `ARCHITECTURAL MASTERPIECE: Realistic, top view, aerial, architecture view of room. 
-  3D Blueprint Floor Plan.
-  Based on the 2 provided wall photos (North and South), reconstruct the room's full layout with extreme spatial accuracy. 
-  BE EXTREMELY PRECISE AND CAREFUL with the orientation of furniture, chairs, bed direction, and all types of furnishings. 
-  Every object visible in the North/South photos must be placed with correct rotation and scale.
-  CRITICAL FENG SHUI OVERLAY: Identify major conflict zones (Sha Chi) and mark them with sharp, glowing neon red circles or translucent red caution zones directly on the 3D objects that are misaligned.
-  Style: Professional 3D architectural visualization, high-end interior design render, photorealistic lighting.`;
+  CRITICAL FENG SHUI OVERLAY: Identify major conflict zones (Sha Chi) and mark them with sharp, glowing neon red circles or translucent red caution zones directly on the 3D objects that are misaligned.`;
 
   const response = await ai.models.generateContent({
     model: 'gemini-3-pro-image-preview',
