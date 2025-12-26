@@ -1,0 +1,7 @@
+{
+  "name": "ZenSpace Feng Shui Analyzer",
+  "description": "A professional-grade Feng Shui analysis tool that uses AI to evaluate your room's energy flow and provides actionable design recommendations based on four wall photos.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
